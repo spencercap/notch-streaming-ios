@@ -10,15 +10,6 @@ PODS:
   - J2ObjC2-Framework/JRE (2.0.5-4)
   - J2ObjC2-Framework/JSR305 (2.0.5-4):
     - J2ObjC2-Framework/JRE
-  - PocketSocket (1.0.1):
-    - PocketSocket/Client (= 1.0.1)
-    - PocketSocket/Core (= 1.0.1)
-    - PocketSocket/Server (= 1.0.1)
-  - PocketSocket/Client (1.0.1):
-    - PocketSocket/Core
-  - PocketSocket/Core (1.0.1)
-  - PocketSocket/Server (1.0.1):
-    - PocketSocket/Client
   - SwiftOSC (1.2.2)
   - SwiftyRSA (1.3.0):
     - SwiftyRSA/ObjC (= 1.3.0)
@@ -33,7 +24,6 @@ PODS:
   - ZIPFoundation (0.9.6)
 
 DEPENDENCIES:
-  - PocketSocket
   - SwiftOSC (~> 1.2)
   - WearnotchSDK (from `https://s3.amazonaws.com/wearnotch-media/public/iOS-Releases/1.4.30.pod_release.json`)
 
@@ -43,7 +33,6 @@ SPEC REPOS:
     - CryptoSwift
     - GRDB.swift
     - J2ObjC2-Framework
-    - PocketSocket
     - SwiftOSC
     - SwiftyRSA
     - ZIPFoundation
@@ -57,12 +46,11 @@ SPEC CHECKSUMS:
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
   GRDB.swift: fa0742c1b3d8aa6e3610a05ebf7c6b9e77589726
   J2ObjC2-Framework: 8cb6966ce6ed707390e9b22e8b5437bb6cfd51c7
-  PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
   SwiftOSC: d5750d724e7a348afa64ea2cafa00b3105ec0a76
   SwiftyRSA: 28e1c9ab1f396fd3001d197ba03e1153b524d155
   WearnotchSDK: ffea5fa40c48a2bbf482668bd4e40959cb395285
   ZIPFoundation: 68c35eb2637c21abe56dc60b3277636443bc1501
 
-PODFILE CHECKSUM: cfae90211af514d54645d00a6e3ddeb6edf77f41
+PODFILE CHECKSUM: ad3a9f1a073a8df1e11c741d96b30af11f13e142
 
 COCOAPODS: 1.5.3

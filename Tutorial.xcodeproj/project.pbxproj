@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09C5FE62212FEAD30083DA31 /* PocketSocket in Headers */ = {isa = PBXBuildFile; fileRef = 09C5FE61212FEAD30083DA31 /* PocketSocket */; settings = {ATTRIBUTES = (Public, ); }; };
-		09C5FE64212FEAEF0083DA31 /* PSWebSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C5FE63212FEAEF0083DA31 /* PSWebSocketServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A3938021370490009607E8 /* config_6_full_body.js in Resources */ = {isa = PBXBuildFile; fileRef = 09A3937F21370490009607E8 /* config_6_full_body.js */; };
 		704E8F772125B77F00FD73DB /* WorkoutAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E8F762125B77F00FD73DB /* WorkoutAnimationViewController.swift */; };
 		704E8F812125BB6400FD73DB /* config_11_full_body.js in Resources */ = {isa = PBXBuildFile; fileRef = 704E8F792125BB6200FD73DB /* config_11_full_body.js */; };
 		704E8F822125BB6400FD73DB /* config_1_chest.js in Resources */ = {isa = PBXBuildFile; fileRef = 704E8F7A2125BB6200FD73DB /* config_1_chest.js */; };
@@ -31,8 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09C5FE61212FEAD30083DA31 /* PocketSocket */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PocketSocket; path = Pods/PocketSocket/PocketSocket; sourceTree = "<group>"; };
-		09C5FE63212FEAEF0083DA31 /* PSWebSocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PSWebSocketServer.h; path = Pods/PocketSocket/PocketSocket/PSWebSocketServer.h; sourceTree = "<group>"; };
+		09A3937F21370490009607E8 /* config_6_full_body.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = config_6_full_body.js; sourceTree = "<group>"; };
 		09C5FE65212FECA50083DA31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12AB7663D0FB46BF42B47F04 /* Pods-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tutorial/Pods-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		2368686BCE6F0632B7B0E56A /* Pods_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +87,7 @@
 				704E8F7E2125BB6300FD73DB /* config_5_upper_body.js */,
 				704E8F7B2125BB6200FD73DB /* config_6_lower_body.js */,
 				704E8F802125BB6300FD73DB /* config_6_upper_body.js */,
+				09A3937F21370490009607E8 /* config_6_full_body.js */,
 				704E8F792125BB6200FD73DB /* config_11_full_body.js */,
 				704E8F7D2125BB6300FD73DB /* ConfigurationType.swift */,
 			);
@@ -118,8 +117,6 @@
 		D0B77BAB1F596912005C14DB = {
 			isa = PBXGroup;
 			children = (
-				09C5FE63212FEAEF0083DA31 /* PSWebSocketServer.h */,
-				09C5FE61212FEAD30083DA31 /* PocketSocket */,
 				D0B77BB61F596912005C14DB /* Tutorial */,
 				D0B77BB51F596912005C14DB /* Products */,
 				8B415566222DB3F17C90AAEE /* Pods */,
@@ -158,8 +155,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C5FE62212FEAD30083DA31 /* PocketSocket in Headers */,
-				09C5FE64212FEAEF0083DA31 /* PSWebSocketServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +165,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0B77BC61F596912005C14DB /* Build configuration list for PBXNativeTarget "Tutorial" */;
 			buildPhases = (
-				09C5FE5F212FE93F0083DA31 /* Headers */,
 				899E2851ED0E2B27023F1EE6 /* [CP] Check Pods Manifest.lock */,
+				09C5FE5F212FE93F0083DA31 /* Headers */,
 				D0B77BB01F596912005C14DB /* Sources */,
 				D0B77BB11F596912005C14DB /* Frameworks */,
 				D0B77BB21F596912005C14DB /* Resources */,
@@ -236,6 +231,7 @@
 				704E8F882125BB6400FD73DB /* config_6_upper_body.js in Resources */,
 				704E8F822125BB6400FD73DB /* config_1_chest.js in Resources */,
 				D0B77BC21F596912005C14DB /* LaunchScreen.storyboard in Resources */,
+				09A3938021370490009607E8 /* config_6_full_body.js in Resources */,
 				704E8F842125BB6400FD73DB /* config_3_right_arm.js in Resources */,
 				704E8F872125BB6400FD73DB /* config_2_right_arm.js in Resources */,
 				704E8F862125BB6400FD73DB /* config_5_upper_body.js in Resources */,
@@ -279,7 +275,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
-				"${BUILT_PRODUCTS_DIR}/PocketSocket/PocketSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftOSC/SwiftOSC.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
 				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
@@ -289,7 +284,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOSC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
