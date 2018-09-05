@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A3938021370490009607E8 /* config_6_full_body.js in Resources */ = {isa = PBXBuildFile; fileRef = 09A3937F21370490009607E8 /* config_6_full_body.js */; };
 		704E8F772125B77F00FD73DB /* WorkoutAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E8F762125B77F00FD73DB /* WorkoutAnimationViewController.swift */; };
 		704E8F812125BB6400FD73DB /* config_11_full_body.js in Resources */ = {isa = PBXBuildFile; fileRef = 704E8F792125BB6200FD73DB /* config_11_full_body.js */; };
 		704E8F822125BB6400FD73DB /* config_1_chest.js in Resources */ = {isa = PBXBuildFile; fileRef = 704E8F7A2125BB6200FD73DB /* config_1_chest.js */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A3937F21370490009607E8 /* config_6_full_body.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = config_6_full_body.js; sourceTree = "<group>"; };
 		09C5FE65212FECA50083DA31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12AB7663D0FB46BF42B47F04 /* Pods-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tutorial/Pods-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		2368686BCE6F0632B7B0E56A /* Pods_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 				704E8F7E2125BB6300FD73DB /* config_5_upper_body.js */,
 				704E8F7B2125BB6200FD73DB /* config_6_lower_body.js */,
 				704E8F802125BB6300FD73DB /* config_6_upper_body.js */,
+				09A3937F21370490009607E8 /* config_6_full_body.js */,
 				704E8F792125BB6200FD73DB /* config_11_full_body.js */,
 				704E8F7D2125BB6300FD73DB /* ConfigurationType.swift */,
 			);
@@ -228,6 +231,7 @@
 				704E8F882125BB6400FD73DB /* config_6_upper_body.js in Resources */,
 				704E8F822125BB6400FD73DB /* config_1_chest.js in Resources */,
 				D0B77BC21F596912005C14DB /* LaunchScreen.storyboard in Resources */,
+				09A3938021370490009607E8 /* config_6_full_body.js in Resources */,
 				704E8F842125BB6400FD73DB /* config_3_right_arm.js in Resources */,
 				704E8F872125BB6400FD73DB /* config_2_right_arm.js in Resources */,
 				704E8F862125BB6400FD73DB /* config_5_upper_body.js in Resources */,

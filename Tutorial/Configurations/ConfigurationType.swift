@@ -9,6 +9,7 @@ enum ConfigurationType: String {
     case upperBody5 = "config_5_upper_body.js"
     case lowerBody6 = "config_6_lower_body.js"
     case upperBody6 = "config_6_upper_body.js"
+    case fullBody6 = "config_6_full_body.js"
     case fullBody11 = "config_11_full_body.js"
     
     var name: String {
@@ -18,7 +19,8 @@ enum ConfigurationType: String {
         case .rightArm3: return "Right arm (3)"
         case .upperBody5: return "Upper body (5)"
         case .upperBody6: return "Upper body (6)"
-        case .lowerBody6: return "Loser body (6)"
+        case .lowerBody6: return "Lower body (6)"
+        case .fullBody6: return "Full body (6)"
         case .fullBody11: return "Full body (11)"
         }
     }
@@ -31,6 +33,7 @@ enum ConfigurationType: String {
         case .upperBody5: return 5
         case .upperBody6: return 6
         case .lowerBody6: return 6
+        case .fullBody6: return 6
         case .fullBody11: return 11
         }
     }
@@ -44,6 +47,6 @@ enum ConfigurationType: String {
     }
     
     static var allItems: [ConfigurationType] {
-        return [.chest1, .rightArm2, .rightArm3, .upperBody5, .upperBody6, .lowerBody6, .fullBody11]
+        return [.chest1, .rightArm2, .rightArm3, .upperBody5, .upperBody6, .lowerBody6, .fullBody6, .fullBody11]
     }
 }

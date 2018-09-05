@@ -97,27 +97,75 @@ class VisualiserViewController: WorkoutAnimationViewController, AnimationProgres
                 
                 
                 
-//                print("realy timy")
-//                print(progress.realtimeData)
-                //                var centerpos = GLKVector3.init(v: (0.0, 0.0, 0.0))
-
-
+                
+                // get some bones
                 let RightUpperArm = (self.sceneProvider.skeleton.bone("RightUpperArm"))
-                print( RightUpperArm )
+//                print( RightUpperArm )
+                let RightForeArm = (self.sceneProvider.skeleton.bone("RightForeArm"))
+                let ChestBottom = (self.sceneProvider.skeleton.bone("ChestBottom"))
+                let Hip = (self.sceneProvider.skeleton.bone("Hip"))
+                
+                
+
                 
                 // TODO: iterate through the 'getWorkout' function for each bone 
-                if (RightUpperArm != nil) {
-                    let pos = progress.realtimeData?.getPosition(bone: RightUpperArm!, frameIndex: 0)!
-                    let posX = pos?[1]
-                    print( posX )
+                if (RightForeArm != nil) {
+                    let pos = progress.realtimeData?.getPosition(bone: RightForeArm!, frameIndex: 0)! // positions measured in meters
+                    let posX = pos?[0]
+                    let posY = pos?[1]
+                    let posZ = pos?[2]
+//                    print( posX, posY, posZ )
                     
-                    var posMess = OSCMessage(
-                        OSCAddressPattern("/"),
-                        "posX",
-                        posX
+                    
+                    let ori = progress.realtimeData?.calculateRelativeAngle(bone: RightForeArm!, frameIndex: 0)! // frameIndex: 0 is a hack for realtime
+                    let oriX = ori?[0]
+                    let oriY = ori?[1]
+                    let oriZ = ori?[2]
+//                    print(oriX, oriY, oriZ)
+                    
+                    
+                    let quat = progress.realtimeData?.orientation(bone: RightForeArm!, frameIndex: 0)!
+                    let quatX = GLKQuaternionAxis(quat!)[0]
+                    let quatY = GLKQuaternionAxis(quat!)[1]
+                    let quatZ = GLKQuaternionAxis(quat!)[2]
+                    let quatW = GLKQuaternionAngle(quat!)
+//                    print(quatX, quatY, quatZ, quatW)
+                    
+
+                    let RightForeArmMessage = OSCMessage(
+                        OSCAddressPattern("/RightForeArmMessage/"),
+                        "RightForeArmMessage",
+                        posX,
+                        posY,
+                        posZ,
+                        oriX,
+                        oriY,
+                        oriZ,
+                        quatX,
+                        quatY,
+                        quatZ,
+                        quatW
                     )
                     
+                    client.send(RightForeArmMessage)
+                    
+                }
+                
+                
+                
+                
+                if (ChestBottom != nil) {
+                    let ori = progress.realtimeData?.calculateRelativeAngle(bone: ChestBottom!, frameIndex: 0)!
+                    let oriX = ori?[1]
+//                    print(oriX)
+                    
+                    let posMess = OSCMessage(
+                        OSCAddressPattern("/"),
+                        "oriX",
+                        oriX
+                    )
                     client.send(posMess)
+
                 }
                 
                 
